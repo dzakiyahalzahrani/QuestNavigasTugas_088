@@ -49,4 +49,19 @@ fun Home(onNavigateToPendaftaran: () -> Unit) {
                     .size(260.dp)
                     .padding(bottom = 24.dp)
             )
+// Teks Nama
+            Text(
+                text = "Dzakiyah Al Zahrani",
+                fontSize = 20.sp,
+                fontWeight = FontWeight.SemiBold,
+                modifier = Modifier.padding(top = 16.dp)
+            )
+
+            // Teks NIM
+            Text(
+                text = "20230140088",
+                fontSize = 18.sp,
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
+                modifier = Modifier.padding(bottom = 48.dp)
+            )
 
