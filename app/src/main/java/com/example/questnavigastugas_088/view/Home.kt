@@ -64,4 +64,26 @@ fun Home(onNavigateToPendaftaran: () -> Unit) {
                 color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.padding(bottom = 48.dp)
             )
+            // Tombol "Submit"
+            Button(
+                onClick = onNavigateToPendaftaran, // Panggil fungsi navigasi saat tombol diklik
+                modifier = Modifier
+                    .fillMaxWidth(0.6f) // Lebar 60% dari parent
+                    .height(50.dp)
+            ) {
+                Text("Submit", fontSize = 18.sp)
+            }
+        }
+    }
+}
+
+// Fungsi preview untuk melihat tampilan di Android Studio
+@Preview(showBackground = true)
+@Composable
+fun HomePreview() {
+    // Gunakan tema aplikasi Anda di sini
+    MaterialTheme {
+        Home(onNavigateToPendaftaran = {})
+    }
+}
 
