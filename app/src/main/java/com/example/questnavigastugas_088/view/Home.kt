@@ -31,4 +31,14 @@ fun Home(onNavigateToPendaftaran: () -> Unit) {
                 .padding(24.dp),
             horizontalAlignment = Alignment.CenterHorizontally,
             verticalArrangement = Arrangement.Center // Pusatkan konten secara vertikal
-        )
+        ) {
+            // Teks "Selamat Datang"
+            Text(
+                text = "Selamat Datang",
+                fontSize = 50.sp,
+                fontWeight = FontWeight.Bold,
+                modifier = Modifier.padding(bottom = 48.dp)
+            )
+
+// Placeholder untuk Logo (Gantilah 'ic_launcher_foreground' dengan ID resource drawable logo Anda)
+// Asumsi: Logo 'CARD-LST' ada di drawable
