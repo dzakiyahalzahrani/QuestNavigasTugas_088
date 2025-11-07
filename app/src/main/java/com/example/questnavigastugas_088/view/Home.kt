@@ -22,4 +22,13 @@ fun Home(onNavigateToPendaftaran: () -> Unit) {
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         containerColor = Color(0xFFE0F7FA)
-    )
+    ) { paddingValues ->
+        // Column untuk menyusun elemen secara vertikal di tengah
+        Column(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(paddingValues)
+                .padding(24.dp),
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center // Pusatkan konten secara vertikal
+        )
