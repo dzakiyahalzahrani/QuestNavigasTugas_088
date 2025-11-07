@@ -62,3 +62,23 @@ fun FormIsian(
 
     val genderOptions = listOf("Laki-laki", "Perempuan")
     val statusKawinOptions = listOf("Janda", "Lajang", "Duda")
+
+    Scaffold(
+        topBar = {
+            TopAppBar(
+                modifier = Modifier.padding(top = 1.dp),
+                title = {
+                    Text(
+                        text = "Formulir Pendaftaran",
+                        fontSize = 30.sp,
+                        color = Color.White,
+                        fontWeight = FontWeight.Bold
+                    )
+                },
+                colors = TopAppBarDefaults.topAppBarColors(
+                    containerColor = BlueHeader
+                )
+            )
+        },
+        modifier = modifier.fillMaxSize()
+    )
