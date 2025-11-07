@@ -54,3 +54,8 @@ fun FormIsian(
     var textAlamat by remember { mutableStateOf("") }
     var selectedJK by remember { mutableStateOf("") }
     var selectedStatusKawin by remember { mutableStateOf("") }
+
+    var resultNama by remember { mutableStateOf("") }
+    var resultJK by remember { mutableStateOf("") }
+    var resultStatusKawin by remember { mutableStateOf("") }
+    var resultAlamat by remember { mutableStateOf("") }
