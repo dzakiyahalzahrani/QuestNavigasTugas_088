@@ -42,3 +42,11 @@ fun Home(onNavigateToPendaftaran: () -> Unit) {
 
 // Placeholder untuk Logo (Gantilah 'ic_launcher_foreground' dengan ID resource drawable logo Anda)
 // Asumsi: Logo 'CARD-LST' ada di drawable
+            Image(
+                painter = painterResource(id = R.drawable.bebek), // Ganti dengan ID drawable logo Anda
+                contentDescription = "Logo Aplikasi",
+                modifier = Modifier
+                    .size(260.dp)
+                    .padding(bottom = 24.dp)
+            )
+
